@@ -1,66 +1,92 @@
 body{
-  background-color: #5C276F;
+  background:  #eee2dc;    
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: points;
 }
 #title {
-  color: #e8ecef;
-  font-size: 50px;
-  padding-left: 30px;
+text-align: center;
+padding: 25px 50px;
+color: #ac3b61;
+font-size: 50px;
+padding-left: 30px;
 }
 #main {
-  margin-top: 50px;
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: white;
-  margin-left: 20px;
-  margin-right:20px;
-  height: auto;
-  padding-bottom: 50px;
+background: #edc7b7;
+  border-radius: 50px;
+  padding: 5px 20px 50px;
+  width: 95%;
+  max-width: 1300px;
+  max-height: fit-content;
+  margin: 0 auto 214px;
 }
 h1 {
- color: #7c0432;
- text-align: center;
- font-size: 50px;
- 
- font-weight: bold;
+color: #123c69;
+text-align: center;
+font-size: 50px;
+
+font-weight: bold;
 }
 h2 {
-  color: #7c0432;
-  text-align: center;
-  font-size: 40px;
-  
+color: #123c69;
+text-align: center;
+font-size: 40px;
+
 }
 .start {
-  text-align: center;
+text-align: center;
 }
 button {
-  width: auto;
-  height: 40px;
-  background-color: #b19cd9;
-  font-size:20px;
-  color: #551a8B;
+box-shadow: 0px 10px 14px -7px #408c99;
+/* background:linear-gradient(to bottom, #f8b8cd 5%, #b49da5 100%); */
+background-color:#ac3b61;
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+/* color: black; */
+font-family:Arial;
+font-size:20px;
+font-weight:bold;
+padding:13px 32px;
+text-decoration:none;
+text-shadow:0px 1px 0px #3d768a;
 }
+button:hover {
+background:linear-gradient(to bottom, #5e2437 5%, #7c2f49 100%);
+/* background-color: rgba(#f3b8cc, 10%); */
+background-color:#408c99;
+}
+button:active {
+position:relative;
+top:1px;
+}
+
+
 p{
-  color: black;
-  font-size: 40px;
+color: black;
+font-size: 40px;
 }
 #but{
-  text-align: right;
+text-align: right;
 }
 input {
-  width: 20px;
-  height: 20px;
+width: 20px;
+height: 20px;
 }
 span{
-  color:black	;
-  font-size: 30px;
-  padding-left: 40px;
+color:black	;
+font-size: 30px;
+padding-left: 40px;
 }
 #Score {
-  text-align: center;
+text-align: center;
 }
 h4 {
-  color: #4169e1;
-  font-size: 50px;
-  text-align: center;
+color: #123c69;
+font-size: 50px;
+text-align: center;
 }

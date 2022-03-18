@@ -35,7 +35,7 @@ $("#prev").click(function(){
 });
 $("#submit").click(function(){
   question.hide();
-  for(var i=0;i<10;i++){
+  for(var i=0;i<15;i++){
     if(parseInt($(question[i]).find('input[name="options"]:checked').val())===1)
       score++;
 
@@ -51,11 +51,11 @@ $("#submit").click(function(){
   }
 
   if(score <= 20)
-	dys = "Thanks for your patience,No need to worry.Your ward is not Dyslexic";	
+	dys = "Thanks for your patience, no need to worry. Your ward is not Dyslexic";	
   else if(score <= 20 && score<=30)
-	dys = "Your ward is mildly Dyslexic,Its time to take all the symptoms seriously and pay a close attention";
-  else if(score >= 30)
-	dys = "Your ward is Dyslexic, please pay special attention";
+	dys = "This is not an official diagnosis, however, it appears that you have signs consistent with medium level Dyslexia";
+  else if(score > 30)
+	dys = "This is not an official diagnosis, however, it appears that you have signs consistent of severe Dyslexia";
   //alert(dys);
   $('#score').text(dys);
   $("#Score").show();
