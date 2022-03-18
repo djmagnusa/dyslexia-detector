@@ -38,7 +38,18 @@ $("#submit").click(function(){
   for(var i=0;i<10;i++){
     if(parseInt($(question[i]).find('input[name="options"]:checked').val())===1)
       score++;
+
+    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===2)
+      score+=2;
+
+    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===3)
+      score+=3;
+    
+    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===4)
+      score+=4;
+
   }
+  
   if(score <= 3)
 	dys = "Thanks for your patience,No need to worry.Your ward is not Dyslexic";	
   else if(score <= 6)
