@@ -16,3 +16,4 @@ function navCheck() {
       $("#nav").show();
     }
 }
+
