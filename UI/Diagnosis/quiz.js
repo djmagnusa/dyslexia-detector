@@ -36,25 +36,19 @@ $("#prev").click(function(){
 $("#submit").click(function(){
   question.hide();
   for(var i=0;i<4;i++){
-    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===1)
+    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===2)
       score++;
 
-    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===2)
+    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===1)
       score+=2;
-
-    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===3)
-      score+=3;
-    
-    if(parseInt($(question[i]).find('input[name="options"]:checked').val())===4)
-      score+=4;
 
   }
 
-  if(score <= 20)
+  if(score >= 3 && score < 4)
 	dys = "Thanks for your patience, no need to worry. Your ward is not Dyslexic";	
-  else if(score <= 20 && score<=30)
+  else if(score == 5 || score == 6)
 	dys = "This is not an official diagnosis, however, it appears that you have signs consistent with medium level Dyslexia";
-  else if(score > 30)
+  else if(score == 7 || score == 8)
 	dys = "This is not an official diagnosis, however, it appears that you have signs consistent of severe Dyslexia";
   //alert(dys);
   $('#score').text(dys);

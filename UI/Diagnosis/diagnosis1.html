@@ -1,0 +1,81 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!doctype html>
+<html>
+ <head>
+   <title>Sub-Test 1</title>
+   <script type = 'text/javascript' src = 'jquery-3.2.1.min.js'></script>
+   <script type = 'text/javascript' src = 'quiz.js'></script>
+   <link rel="stylesheet" type="text/css" href="quiz.css"></link>
+ </head>
+ <body>
+   <h3 id ='title'>Diagnostic Testing</h3>
+  <div id = 'main'>
+   <div id = 'First'>
+     <h1><strong>Sub-Test 1</strong></h1>
+     <br>
+     <h2>Click here to begin:</h2>
+     <div class ='start'>
+     <button name = 'start'>Start</button>
+   </div>
+   </div>
+   <div class = 'question'>
+     <p>1) Draw a line in between 2 lines drawn, without lifting your pencil. Do not touch or retrace the line. DO NOT USE A RULER.</p>
+     <p>Was your child successful in completing this task?</p>
+     <form>
+       <div class="image-container">           
+            <img src="../Images/ques1.png">
+       </div>
+       <input name = 'options' type = 'radio' value = 1><span>✔️ Yes</span></input><br><br>
+       <input name = 'options' type = 'radio' value = 2><span>❌ No</span></input><br><br>
+     </form>
+   </div>
+   <div class = 'question'>
+     <p>2) Join the numbers in their sequence, without lifting your pencil </p>
+     <p>Was your child successful in completing this task?</p>
+     <form>
+        <div class="image-container">
+            <img src="../Images/ques2.png">
+        </div> 
+        <input name = 'options' type = 'radio' value = 1><span>✔️ Yes</span></input><br><br>
+        <input name = 'options' type = 'radio' value = 2><span>❌ No</span></input><br><br>
+     </form>
+   </div>
+   <div class = 'question'>
+     <p>3) Help the boy find his house, without lifting your pencil. Do not touch or retrace the lines<form>
+     <p>Was your child successful in completing this task?</p>
+     <form>
+        <div class="image-container">
+           <img src="../Images/ques3.png">
+        </div> 
+        <input name = 'options' type = 'radio' value = 1><span>✔️ Yes</span></input><br><br>
+        <input name = 'options' type = 'radio' value = 2><span>❌ No</span></input><br><br>
+     </form>
+   </div>
+   <div class = 'question'>
+     <p>4) Draw the stems to complete the picture </p>
+     <p>Was your child successful in completing this task?</p>
+     <form>
+        <div class="image-container">
+            <img src="../Images/ques4.png">
+        </div> 
+        <input name = 'options' type = 'radio' value = 1><span>✔️ Yes</span></input><br><br>
+        <input name = 'options' type = 'radio' value = 2><span>❌ No</span></input><br><br>
+     </form>
+   </div>
+  
+   <br>
+   <div id = 'but'>
+    <button id = 'prev'>Previous</button>
+    <button id = 'next'>Next</button>
+    <button id = 'submit'>Submit</button>
+  </div>
+ <div id ='Score'>
+   <h4> Result:</h4>
+   <p id='score'></p><br>
+   <p id='dys'></p><br>
+   <button id='restart'>Restart</button>
+   <a href="diagnosis.html"><button>Back to diagnostic testing</button></a>
+ </div>
+</div>
+ </body>
+</html>
